@@ -1,0 +1,26 @@
+<section>
+  <h2>Football field</h2>
+
+  <div class="test" *ngFor="let key of footballField | keys">
+    {{ key }}
+    {{ footballField[key] }}
+  </div>
+</section>
+
+<section>
+  <h2>Handball field</h2>
+
+  <div class="test" *ngFor="let key of handballField | keys">
+    {{ key }}
+    {{ handballField[key] }}
+  </div>
+</section>
+
+<section>
+  <h2>Football training field</h2>
+
+  <div class="test" *ngFor="let key of footballTrainingField | keys">
+    {{ key }}
+    {{ footballTrainingField[key] }}
+  </div>
+</section>
