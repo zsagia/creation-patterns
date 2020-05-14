@@ -26,7 +26,7 @@ export class HandballFieldBuilder implements FieldBuilder {
   }
 
   public produceCornels(): FieldBuilder {
-    throw new Error("Method not implemented.");
+    throw new Error('Method not implemented.');
   }
 
   public produceGoals(): FieldBuilder {
@@ -42,7 +42,7 @@ export class HandballFieldBuilder implements FieldBuilder {
   }
 
   public produceSides(): FieldBuilder {
-    this.handballField.sides = '2 x 50 + 4 x 100';
+    this.handballField.sides = '6000 x 4000';
 
     return this;
   }

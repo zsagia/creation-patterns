@@ -19,31 +19,31 @@ export class FootballFieldBuilder implements FieldBuilder {
   // #region Public Methods (7)
 
   public produceAreas(): FieldBuilder {
-    this.footballField.penaltyAreas = '2 x 600';
+    this.footballField.penaltyAreas = '2 x 1650';
 
     return this;
   }
 
   public produceCornels(): FieldBuilder {
-    this.footballField.corners = '2';
+    this.footballField.corners = '4';
 
     return this;
   }
 
   public produceGoals(): FieldBuilder {
-    this.footballField.goals = '2 x 300 x 208';
+    this.footballField.goals = '2 x 732 x 244';
 
     return this;
   }
 
   public producePenaltyMarks(): FieldBuilder {
-    this.footballField.penaltyMarks = '2 x 700';
+    this.footballField.penaltyMarks = '2 x 1100';
 
     return this;
   }
 
   public produceSides(): FieldBuilder {
-    this.footballField.sides = '2 x 50 + 4 x 100';
+    this.footballField.sides = '7000 x 11000';
 
     return this;
   }

@@ -1,13 +1,13 @@
 <article>
-    <header>
-      <h2>
-        Factory method
-      </h2>
-    </header>
-  
-    <section *ngFor="let match of matches">
-      <h3>{{ match.team1 }} - {{ match.team2 }}</h3>
-  
-      <span> {{ match.dateTime | date: 'medium' }}</span>
-    </section>
-  </article>
+  <header>
+    <h2>
+      Factory method
+    </h2>
+  </header>
+
+  <section *ngFor="let match of matches">
+    <h3>{{ match.team1 }} - {{ match.team2 }}</h3>
+    <h4>{{ match.category }}</h4>
+    <span> {{ match.dateTime | date: "medium" }}</span>
+  </section>
+</article>
