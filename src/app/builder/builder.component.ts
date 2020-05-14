@@ -1,4 +1,4 @@
-import { Component, OnInit, Pipe, PipeTransform } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { FieldDirector } from './director/field-director';
 import { FootballFieldBuilder } from './field/builder/football-field-builder';
@@ -60,14 +60,4 @@ export class BuilderComponent implements OnInit {
   }
 
   // #endregion Public Methods (1)
-}
-
-@Pipe({
-  name: 'keys'
-})
-export class KeysPipe implements PipeTransform {
-
-  transform(value: any, args?: any): any {
-    return Object.keys(value);
-  }
 }

@@ -1,23 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BuilderComponent, KeysPipe } from './builder/builder.component';
+import { BuilderComponent } from './builder/builder.component';
 import { FactoryMethodComponent } from './factory-method/factory-method.component';
+import { KeysPipe } from './pipe/keys.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     BuilderComponent,
     FactoryMethodComponent,
-    KeysPipe
+    KeysPipe,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
