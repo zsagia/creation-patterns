@@ -1,26 +1,40 @@
-<section>
-  <h2>Football field</h2>
+<article>
+  <header>
+    <h2>
+      Builder
+    </h2>
+  </header>
 
-  <div class="test" *ngFor="let key of footballField | keys">
-    {{ key }}
-    {{ footballField[key] }}
-  </div>
-</section>
+  <section>
+    <h3>Football field</h3>
 
-<section>
-  <h2>Handball field</h2>
+    <div class="test" *ngFor="let key of footballField | keys">
+      <span>
+        {{ key }}:
+        {{ footballField[key] }}
+      </span>
+    </div>
+  </section>
 
-  <div class="test" *ngFor="let key of handballField | keys">
-    {{ key }}
-    {{ handballField[key] }}
-  </div>
-</section>
+  <section>
+    <h3>Handball field</h3>
 
-<section>
-  <h2>Football training field</h2>
+    <div class="test" *ngFor="let key of handballField | keys">
+      <span>
+        {{ key }}:
+        {{ handballField[key] }}
+      </span>
+    </div>
+  </section>
 
-  <div class="test" *ngFor="let key of footballTrainingField | keys">
-    {{ key }}
-    {{ footballTrainingField[key] }}
-  </div>
-</section>
+  <section>
+    <h3>Football training field</h3>
+
+    <div class="test" *ngFor="let key of footballTrainingField | keys">
+      <span>
+        {{ key }}:
+        {{ footballTrainingField[key] }}
+      </span>
+    </div>
+  </section>
+</article>
